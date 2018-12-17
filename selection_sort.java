@@ -3,6 +3,8 @@ package sorting;
 public class selection_sort {
 
 	  public static int[] selectionSort(int[] toSort) {
+			 if(toSort==null)
+					throw new NullPointerException();
 			 for (int i = 0; i < toSort.length-1; i++) {
 					// index for the "smallest" element
 					int smallest = i;

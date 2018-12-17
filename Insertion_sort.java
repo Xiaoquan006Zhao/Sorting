@@ -4,6 +4,8 @@ package sorting;
 public class Insertion_sort {
 
 	  public static int[] insertionSort(int[] toSort) {
+			 if(toSort==null)
+					throw new NullPointerException();
 			 for (int i = 1; i < toSort.length; i++) {
 					int insert = toSort[i];
 					int j;
