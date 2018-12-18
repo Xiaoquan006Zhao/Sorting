@@ -3,6 +3,8 @@ package sorting;
 
 import java.util.Arrays;
 
+
+//O(n*log(n) )
 public class merge_sort {
 
 	  public static void mergeSort(int[] toSort) {

@@ -1,5 +1,6 @@
 package sorting;
 
+//O(n^2)
 public class selection_sort {
 
 	  public static void selectionSort(int[] toSort) {

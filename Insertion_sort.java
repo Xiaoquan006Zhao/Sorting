@@ -1,6 +1,7 @@
 package sorting;
 
 
+//O(n^2) usually faster than selection sort
 public class Insertion_sort {
 
 	  public static void insertionSort(int[] toSort) {
