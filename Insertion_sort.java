@@ -1,12 +1,15 @@
 package sorting;
 
 
-//O(n^2) usually faster than selection sort
 public class Insertion_sort {
-
+	  /**
+	   * perform a instertion sort. O(n^2). Insertion sort is usually faster than selection sort.
+	   * @param toSort, the array that is being sorted
+	   */
 	  public static void insertionSort(int[] toSort) {
-			 if(toSort==null)
+			 if (toSort == null)
 					throw new NullPointerException();
+			 
 			 for (int i = 1; i < toSort.length; i++) {
 					int insert = toSort[i];
 					int j;

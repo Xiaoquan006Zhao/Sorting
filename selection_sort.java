@@ -1,11 +1,14 @@
 package sorting;
 
-//O(n^2)
 public class selection_sort {
-
+	  /**
+	   * perform selection sort. O(n^2).
+	   * @param toSort, the array that is being sorted
+	   */
 	  public static void selectionSort(int[] toSort) {
-			 if(toSort==null)
+			 if (toSort == null)
 					throw new NullPointerException();
+			 
 			 for (int i = 0; i < toSort.length-1; i++) {
 					// index for the "smallest" element
 					int smallest = i;
@@ -20,4 +23,5 @@ public class selection_sort {
 					toSort[i] = temp;
 			 }
 	  }
+	  
 }

@@ -3,14 +3,15 @@ package sorting;
 
 import java.util.Arrays;
 
-
-//O(n*log(n) )
 public class merge_sort {
-
+	  /**
+	   * perform a merge sort. O(n*log(n) ). merge sort is faster than quick sort when the sample size is very
+	   * large, but takes more memory.
+	   * @param toSort, the array that is being sorted
+	   */
 	  public static void mergeSort(int[] toSort) {
 			 if (toSort == null)
 					throw new NullPointerException();
-
 			 if (toSort.length < 2)
 					return;
 
@@ -32,13 +33,13 @@ public class merge_sort {
 						  origin[mergedIndex++] = first[firstIndex++];
 					else
 						  origin[mergedIndex++] = second[secondIndex++];
-
 			 }
+			 
 			 while (firstIndex < first.length)
 					origin[mergedIndex++] = first[firstIndex++];
 
 			 while (secondIndex < second.length)
 					origin[mergedIndex++] = second[secondIndex++];
-	  }
 
+	  }
 }

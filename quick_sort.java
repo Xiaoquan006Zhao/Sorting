@@ -1,11 +1,16 @@
 package sorting;
 
 
-//O(n*log(n) )
-public class quick_sort {
 
+public class quick_sort {
+	  /**
+	   * perform a quick sort. O(n*log(n) )
+	   * @param toSort, the array that is being sorted
+	   * @param start, the first index of toSort
+	   * @param end, the last index of toSort
+	   */
 	  public static void quickSort(int[] toSort, int start, int end) {
-			 if(toSort == null)
+			 if(toSort==null)
 					throw new NullPointerException();
 			 if (start >= end)
 					return;
