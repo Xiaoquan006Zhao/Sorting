@@ -5,6 +5,8 @@ package sorting;
 public class quick_sort {
 
 	  public static void quickSort(int[] toSort, int start, int end) {
+			 if(toSort == null)
+					throw new NullPointerException();
 			 if (start >= end)
 					return;
 
