@@ -3,7 +3,7 @@ package sorting;
 
 public class Insertion_sort {
 
-	  public static int[] insertionSort(int[] toSort) {
+	  public static void insertionSort(int[] toSort) {
 			 if(toSort==null)
 					throw new NullPointerException();
 			 for (int i = 1; i < toSort.length; i++) {
@@ -16,7 +16,6 @@ public class Insertion_sort {
 					if (j != i)
 						  toSort[j] = insert;
 			 }
-			 return toSort;
 	  }
 	  
 }

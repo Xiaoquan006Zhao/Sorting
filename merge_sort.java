@@ -5,12 +5,12 @@ import java.util.Arrays;
 
 public class merge_sort {
 
-	  public static int[] mergeSort(int[] toSort) {
+	  public static void mergeSort(int[] toSort) {
 			 if (toSort == null)
 					throw new NullPointerException();
 
 			 if (toSort.length < 2)
-					return toSort;
+					return;
 
 			 int mid = toSort.length / 2;
 			 int[] firstHalf = Arrays.copyOfRange(toSort, 0, mid);
@@ -18,12 +18,10 @@ public class merge_sort {
 			 int[] secondHalf = Arrays.copyOfRange(toSort, mid, toSort.length);
 			 mergeSort(secondHalf);
 
-			 int[] sorted = merge(firstHalf, secondHalf,toSort);
-
-			 return sorted;
+			 merge(firstHalf, secondHalf,toSort);
 	  }
 
-	  public static int[] merge(int[] first, int[] second,int[] origin) {
+	  public static void merge(int[] first, int[] second,int[] origin) {
 			 int mergedIndex = 0;
 			 int firstIndex = 0;
 			 int secondIndex = 0;
@@ -39,8 +37,6 @@ public class merge_sort {
 
 			 while (secondIndex < second.length)
 					origin[mergedIndex++] = second[secondIndex++];
-
-			 return origin;
 	  }
 
 }
