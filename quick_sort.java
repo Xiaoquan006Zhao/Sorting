@@ -21,9 +21,9 @@ public class quick_sort {
 
 			 while (initial < terminal) {
 					while (initial < end && toSort[initial] <= cursor)
-						  initial++;
+						  initial++; //find the first item that is bigger than the cursor from start(begining of the array)
 					while (terminal >= start && toSort[terminal] > cursor)
-						  terminal--;
+						  terminal--; //find the first item that is smaller than the cursor from end(ending of the array)
 
 					if (initial < terminal) {
 						  int temp = toSort[initial];
